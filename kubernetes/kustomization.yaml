@@ -1,4 +1,4 @@
-namepPrefix: prod
+namePrefix: prod
 
 resources:
 - spring-demo-pod.yml
