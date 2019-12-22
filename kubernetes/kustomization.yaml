@@ -1,7 +1,7 @@
 namePrefix: prod-
 images:
 - name: ellinj/spring-demo
-  newTag: "0.103.0"
+  newTag: "0.104.0"
 resources:
 - spring-demo-pod.yml
 - spring-demo-service.yml
