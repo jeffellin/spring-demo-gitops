@@ -2,8 +2,12 @@ namePrefix: dev-
 images:
 - name: ellinj/spring-demo
   newTag: "0.107.0"
+commonLabels:
+  app: dev-spring-demo
 resources:
 - spring-demo-pod.yml
 - spring-demo-service.yml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+configurations:
+- rollout-transform.yaml
