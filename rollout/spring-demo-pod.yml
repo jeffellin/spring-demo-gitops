@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: spring-demo-deployment
+  labels:
+    app: spring-demo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: spring-demo
+  template:
+    metadata:
+      labels:
+        app: spring-demo
+    spec:
+      containers:
+      - name: spring-demo
+        image: ellinj/spring-demo:0.84.0
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
+  minReadySeconds: 30
+  revisionHistoryLimit: 3
+  strategy:
+    canary: # A new field that used to provide configurable options for a Canary strategy
+      steps:
+      - setWeight: 20
+      - pause: {}
