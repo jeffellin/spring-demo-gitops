@@ -1,7 +1,7 @@
 namePrefix: dev-
 images:
 - name: ellinj/spring-demo
-  newTag: "0.111.0"
+  newTag: "0.112.0"
 commonLabels:
   app: dev-spring-demo
 resources:
