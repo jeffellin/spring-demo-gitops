@@ -1,7 +1,7 @@
 namePrefix: progressive-
 images:
 - name: ellinj/spring-demo
-  newTag: bluegood
+  newTag: 2020JAN01-RELEASE
 commonLabels:
   app: progressive-spring-demo
 resources:
