@@ -1,7 +1,7 @@
 namePrefix: prod-
 images:
 - name: ellinj/spring-demo
-  newTag: 2020JAN03-RELEASE
+  newTag: 2020JAN01-RELEASE
 resources:
 - spring-demo-pod.yml
 - spring-demo-service.yml
